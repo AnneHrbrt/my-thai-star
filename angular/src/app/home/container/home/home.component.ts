@@ -16,17 +16,9 @@ export class HomeComponent {
       titleKey: 'home.restaurantTitle',
       contentKey: 'home.restaurantContent',
       caption: 'home.restaurantImage',
-      img: './assets/images/thai-restaurant.jpg',
+      img: '',
       buttonLabelKey: 'buttons.bookTable',
       navigate: () => this.navigateTo('bookTable'),
-    },
-    menu: {
-      titleKey: 'home.menuTitle',
-      contentKey: 'home.menuContent',
-      caption: 'home.menuImage',
-      img: './assets/images/thai-restaurant-dish.jpg',
-      buttonLabelKey: 'buttons.viewMenu',
-      navigate: () => this.navigateTo('menu'),
     },
   };
 
@@ -49,5 +41,4 @@ interface TileWithNavigation extends Tile {
 
 interface HomePageTiles {
   restaurant: TileWithNavigation;
-  menu: TileWithNavigation;
 }

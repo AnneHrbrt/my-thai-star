@@ -6,7 +6,7 @@
     "send": "Send",
     "login": "Login",
     "register": "Register",
-    "bookTable": "Book Table",
+    "bookTable": "Umfrage starten",
     "inviteFriends": "Invite friends",
     "viewMenu": "View Menu",
     "addToOrder": "Add to order",
@@ -64,8 +64,8 @@
     "bookingTab": "Book a table",
     "reservationTab": "Invite friends",
     "reservationTabImage": "Our clients enjoying the services of our restaurant",
-    "bookingTitle": "Book your table",
-    "bookingSubtitle": "You can book a table and an order menu",
+    "bookingTitle": "Wie sollte man deiner Meinung nach grundsätzlich in Projekten beim Update von Java vorgehen?",
+    "bookingSubtitle": " ",
     "reservationTitle": "Add your information and friends",
     "dialog": {
       "title": "Book Table",
@@ -88,7 +88,7 @@
   "main": {
     "home": "Home",
     "menu": "Menu",
-    "book": "Book table",
+    "book": "Umfrage",
     "orders": "Orders",
     "reservations": "Reservations",
     "userActions": {
@@ -102,15 +102,15 @@
     }
   },
   "home": {
-    "subtitle": "More than just delicious food",
-    "restaurantTitle": "Our restaurant",
-    "restaurantImage": "One of our customers reads a book while enjoying his food",
+    "subtitle": "Java-Verwendung",
+    "restaurantTitle": "Diese Umfrage ist freiwillig und anonym.",
+    "restaurantImage": " ",
     "restaurantContent":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum tellus eget volutpat porta. Duis pellentesque velit venenatis, tincidunt ligula ac, rhoncus felis. Donec aliquam nulla id turpis dignissim laoreet. Vestibulum sit amet ante eu lacus convallis lobortis sit amet eu orci. Nam vitae felis ac nisi accumsan faucibus.",
+      "Diese Umfrage besteht nur aus 4 Fragen. Die Ergebnisse dazu sind anschaubar. Dies ist die einzige Erinnerung zur Teilnahme, entweder ihr macht mit oder nicht.",
     "menuTitle": "Our menu",
     "menuImage": "On our menu you will find a lot of tasty dishes to choose between",
     "menuContent":
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum tellus eget volutpat porta. Duis pellentesque velit venenatis, tincidunt ligula ac, rhoncus felis. Donec aliquam nulla id turpis dignissim laoreet. Vestibulum sit amet ante eu lacus convallis lobortis sit amet eu orci. Nam vitae felis ac nisi accumsan faucibus."
+      "Diese Umfrage besteht nur aus 4 Fragen. Die Ergebnisse dazu können angeschaut werden. Dies ist die einzige Erinnerung zur Teilnahme, entweder ihr macht mit oder nicht."
   },
   "menu": {
     "filterTitle": "FILTERS",

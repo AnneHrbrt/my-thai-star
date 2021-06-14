@@ -1,0 +1,12 @@
+<div>{{surveyQuestion.questionText}}</div>
+<div *ngFor="let answer of surveyQuestion.answers; let k =index;">
+<div *ngIf="surveyQuestion.type == 'regular'">
+<mat-radio-button>{{answer.answerText}}</mat-radio-button>
+</div>
+<div *ngIf="surveyQuestion.type=='text'">
+<input>
+</div>
+<div *ngIf="surveyQuestion.type=='range'">
+<mat-slider min="1" max="10" step="1" value=""></mat-slider>
+</div>
+</div>

@@ -26,6 +26,7 @@ import { WebviewDirective } from './shared/directives/webview.directive';
 import { SidenavModule } from './sidenav/sidenav.module';
 import { CustomSerializer, effects, reducers } from './store';
 import { UserAreaModule } from './user-area/user-area.module';
+import {SurveyModule} from './survey/survey.module';
 
 @NgModule({
   imports: [
@@ -38,6 +39,7 @@ import { UserAreaModule } from './user-area/user-area.module';
     MenuModule,
     HeaderModule,
     BookTableModule,
+    SurveyModule,
     SidenavModule,
     WaiterCockpitModule,
     UserAreaModule,

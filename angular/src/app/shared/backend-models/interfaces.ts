@@ -109,3 +109,16 @@ export class Role {
     name: string;
     permission: number;
 }
+
+export class SurveyQuestion {
+  questionText: string;
+  answers: SurveyAnswer[];
+  type: 'range'|'text'|'regular';
+}
+
+export class SurveyAnswer {
+  answerText: string;
+  selected: boolean;
+  requiresComment: boolean;
+  comment: string;
+}

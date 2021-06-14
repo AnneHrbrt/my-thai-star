@@ -1,0 +1,19 @@
+<div class="property-text-center">
+  <h3>Umfrage</h3>
+</div>
+<mat-card class="">
+  <mat-tab-group mat-stretch-tabs>
+
+    <mat-tab>
+    <div *ngFor="let question of surveyQuestions; let i = index">
+    	<div *ngIf="i == currentIndex">
+    		<app-survey-question [surveyQuestion]="question"></app-survey-question>
+    	</div>
+    </div>
+    <button (click)="currentIndex = currentIndex - 1">zurück</button>
+    <button (click)="currentIndex = currentIndex + 1">weiter</button>
+      <div class="">
+      </div>
+    </mat-tab> 
+  </mat-tab-group>
+</mat-card>

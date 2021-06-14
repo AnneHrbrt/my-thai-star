@@ -13,24 +13,3 @@ export class ReservationInfo {
   bookingType: number;
   assistants?: number;
 }
-
-export class FriendsInvite {
-  email: string;
-  acceptance: string;
-}
-
-export class OrderInfo {
-  orderLine: OrderLineInfo;
-  extras: number[];
-}
-
-export class OrderLineInfo {
-  dishId: number;
-  amount: number;
-  comment: string;
-}
-
-export class OrderListInfo {
-  booking: { bookingToken: string };
-  orderLines: OrderInfo[];
-}
