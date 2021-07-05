@@ -18,7 +18,7 @@ export class HomeComponent {
       caption: 'home.restaurantImage',
       img: '',
       buttonLabelKey: 'buttons.bookTable',
-      navigate: () => this.navigateTo('bookTable'),
+      navigate: () => this.navigateTo('survey'),
     },
   };
 

@@ -1,8 +1,12 @@
 <div>{{surveyQuestion.questionText}}</div>
-<div *ngFor="let answer of surveyQuestion.answers; let k =index;">
 <div *ngIf="surveyQuestion.type == 'regular'">
-<mat-radio-button>{{answer.answerText}}</mat-radio-button>
+<mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="surveyQuestion.selectedAnswer">
+  <mat-radio-button class="example-radio-button" *ngFor="let answer of surveyQuestion.answers" [value]="answer.answerText" [checked]="answer.selected">
+    {{answer.answerText}}
+  </mat-radio-button> 
+</mat-radio-group>
 </div>
+<div *ngFor="let answer of surveyQuestion.answers; let k =index;">
 <div *ngIf="surveyQuestion.type=='text'">
 <input>
 </div>

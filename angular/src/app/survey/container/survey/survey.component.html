@@ -9,11 +9,16 @@
     	<div *ngIf="i == currentIndex">
     		<app-survey-question [surveyQuestion]="question"></app-survey-question>
     	</div>
+    </div> 
+    <div *ngIf="currentIndex<4 && currentIndex>0" class="back">
+    <button mat-raised-button color="accent" (click)="currentIndex = currentIndex - 1">zurück</button>
     </div>
-    <button (click)="currentIndex = currentIndex - 1">zurück</button>
-    <button (click)="currentIndex = currentIndex + 1">weiter</button>
+     <div *ngIf="currentIndex<3">
+    <button mat-raised-button color="accent" [disabled]="surveyQuestions[currentIndex].selectedAnswer===''" (click)="currentIndex = currentIndex + 1">weiter</button>
+    </div>
+    <div *ngIf="currentIndex>=3"> <button mat-raised-button color="accent">absenden</button></div>
       <div class="">
       </div>
-    </mat-tab> 
+    </mat-tab>
   </mat-tab-group>
 </mat-card>

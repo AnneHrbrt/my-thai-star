@@ -113,7 +113,9 @@ export class Role {
 export class SurveyQuestion {
   questionText: string;
   answers: SurveyAnswer[];
+  selectedAnswer: string;
   type: 'range'|'text'|'regular';
+    static answers: any;
 }
 
 export class SurveyAnswer {
@@ -122,3 +124,4 @@ export class SurveyAnswer {
   requiresComment: boolean;
   comment: string;
 }
+/** neue classe oder existierende addieren? -> auf jeden Fall Array mit wert pro Antwort */
