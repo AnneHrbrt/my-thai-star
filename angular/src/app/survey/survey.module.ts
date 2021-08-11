@@ -8,8 +8,10 @@ import { SharedModule } from '../shared/shared.module';
 
 import { TranslocoRootModule } from '../transloco-root.module';
 import { SurveyComponent } from './container/survey/survey.component';
-import { SurveyQuestionComponent } from './components/survey-question/survey-question.component';
+import { SurveyQuestionComponent } from "./components/survey-question/SurveyQuestionComponent";
 import { SurveyAnswerComponent } from './components/survey-answer/survey-answer.component';
+import { StoreModule } from '@ngrx/store';
+import * as fromSurvey from './reducers';
 
 @NgModule({
   imports: [
@@ -19,6 +21,7 @@ import { SurveyAnswerComponent } from './components/survey-answer/survey-answer.
     HttpClientModule,
     TranslocoRootModule,
     CoreModule,
+    StoreModule.forFeature(fromSurvey.surveyFeatureKey, fromSurvey.reducers, { metaReducers: fromSurvey.metaReducers }),
   ],
   providers: [WindowService],
   declarations: [SurveyComponent, SurveyQuestionComponent, SurveyAnswerComponent],

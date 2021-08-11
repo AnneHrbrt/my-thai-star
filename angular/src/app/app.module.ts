@@ -27,6 +27,8 @@ import { SidenavModule } from './sidenav/sidenav.module';
 import { CustomSerializer, effects, reducers } from './store';
 import { UserAreaModule } from './user-area/user-area.module';
 import {SurveyModule} from './survey/survey.module';
+import { AppEffects } from './app.effects';
+import { reducers, metaReducers } from './reducers';
 
 @NgModule({
   imports: [
@@ -57,6 +59,10 @@ import {SurveyModule} from './survey/survey.module';
     }),
     EffectsModule.forRoot(effects),
     StoreRouterConnectingModule.forRoot({ serializer: DefaultRouterStateSerializer }),
+     StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode
+    }),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     HttpClientModule
   ],

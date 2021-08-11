@@ -124,4 +124,3 @@ export class SurveyAnswer {
   requiresComment: boolean;
   comment: string;
 }
-/** neue classe oder existierende addieren? -> auf jeden Fall Array mit wert pro Antwort */
